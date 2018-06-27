@@ -4,7 +4,7 @@
 `derp` can be used via the `derp` CLI or the `derp` console on the web.
 
 ### Pre-requisites
-- If using AWS: AWS CLI installed on your OS with access to your AWS environment
+- If using AWS: Your server will need access to your AWS environment!
 - NodeJS
 
 ### Installation

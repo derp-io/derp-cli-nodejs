@@ -1,0 +1,23 @@
+{
+    "name": "derp-cli",
+    "version": "1.0.0",
+    "description": "Dynamic Endpoint Routing Platform CLI For NodeJS",
+    "main": "lib/index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/derp-io/derp-cli-nodejs.git"
+    },
+    "author": "Steven Ferrell",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/derp-io/derp-cli-nodejs/issues"
+    },
+    "homepage": "https://github.com/derp-io/derp-cli-nodejs#readme",
+    "preferGlobal": true,
+    "bin": {
+        "derp": "./bin/derp.js"
+    }
+}
