@@ -18,11 +18,14 @@ yargs
             })
 
     }, (argv) => {
-
-        derp.new(`${argv.httpMethod}:${argv.endpointName}`);
+        derp.new(argv.endpointName, argv.httpMethod);
     })
-    .command(['cancel'], 'the cancel command', () => {}, (argv) => {
-        console.log('ok i cancelled it')
-    })
+    .command(['init [appName]'],
+        'Initialize derp project.',
+        (yargs) => {
+            return yargs;
+        }, (argv) => {
+            derp.init(argv.appName);
+        })
     .help()
     .argv

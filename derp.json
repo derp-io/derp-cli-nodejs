@@ -1,0 +1,15 @@
+{
+    "appName": "app",
+    "endPoints": {
+        "admin/getUser/:id": {
+            "GET": "http://example.com/admin/getUser/:id"
+        },
+        "admin/updateUser/:id": {
+            "POST": "http://example.com/admin/updateUser/:id"
+        },
+        "admin/user/:id": {
+            "GET": "http://example.com/admin/user/:id",
+            "DELETE": "http://example.com/admin/user/:id"
+        }
+    }
+}
