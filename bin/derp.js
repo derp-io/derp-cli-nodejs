@@ -4,28 +4,43 @@ var derp = require('../lib/index');
 const yargs = require('yargs');
 
 yargs
-    .command(['new <endpointName> <httpMethod>'], 'Create a new endpoint', (yargs) => {
-        return yargs.positional('endpointName', {
-                describe: 'Name used for your routed endpoint',
+    .command(['new-route <routeName> <routeDefinition> <routeType>'], 'Create a new route', (yargs) => {
+        return yargs.positional('routeName', {
+                describe: 'Name used for your routed route',
                 type: 'string'
-            }).positional('httpMethod', {
-                describe: 'Type of HTTP Method for this endpoint: GET|POST|PUT|DELETE',
+            }).positional('routeDefinition', {
+                describe: 'Definition of route as it should be exposed in a url, e.g. `api/getUserById/:id`',
+                type: 'string'
+            }).positional('routeType', {
+                describe: 'Type of HTTP Method for this route: GET|POST|PUT|DELETE',
                 type: 'string'
             })
             .option('provider', {
                 alias: 'p',
                 default: 'aws-lambda'
             })
-
     }, (argv) => {
-        derp.new(argv.endpointName, argv.httpMethod);
+        derp.route(argv.routeName, argv.routeDefinition, argv.routeType);
     })
-    .command(['init [appName]'],
+    .command(['deploy-route <routeName>'], 'Deploy a route', (yargs) => {
+        return yargs.positional('routeName', {
+            describe: 'Name used for your routed route',
+            type: 'string'
+        })
+    }, (argv) => {
+        derp.deployRoute(argv.routeName);
+    })
+    .command(['init <appName>'],
         'Initialize derp project.',
         (yargs) => {
-            return yargs;
+            return yargs
+                .option('region', {
+                    alias: 'r',
+                    default: 'us-east-1'
+                })
         }, (argv) => {
-            derp.init(argv.appName);
+            console.log(argv)
+            derp.init(argv.appName, argv.region);
         })
     .help()
     .argv
