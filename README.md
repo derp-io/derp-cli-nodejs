@@ -20,7 +20,7 @@ Once your environment has been created, you can make a new route using the CLI, 
 # derp-cli new-route <routeName> <routeDefinition> <type>
 $ derp-cli new-route getDerpCount derpcount GET
 ```
-This will create a new folder in your local environment called `getDerpCount` with a NodeJS stub for your route as well as a `.derp` file for the route.
+This will create a new folder in your local environment called `getDerpCount` with a route stub ready for editing and deployment.
 ```
 # Within routes/getDerpCount directory
 $ index.js package.json
