@@ -39,7 +39,6 @@ yargs
                     default: 'us-east-1'
                 })
         }, (argv) => {
-            console.log(argv)
             derp.init(argv.appName, argv.region);
         })
     .help()
