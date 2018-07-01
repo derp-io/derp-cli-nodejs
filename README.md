@@ -1,36 +1,34 @@
 # Dynamic Endpoint Routing Platform CLI For NodeJS
-## DERP
-`derp` is a platform for quickly provisioning serverless endpoints as a service for use within a centralized application. The `derp` platform handles everything from website registry, serverless function code management, and endpoint routing integration.
-`derp` can be used via the `derp` CLI or the `derp` console on the web.
+## About DERP
+`derp` is a platform that enables quick and easy management and provisioning of serverless applications.
 
 ### Pre-requisites
-- If using AWS: Your server will need access to your AWS environment!
-- NodeJS
+- Your environment will need access to your AWS account in order to deploy
+- NodeJS (8.5+)
 
 ### Installation
 - npm i -g derp-cli
 
 ### Usage
-Use the `derp` CLI to automate your local `derp` environment, including pipelines and environments for testing, release, and more.
-Calling `derp-cli init` in your terminal will read your `.derp` configuration file and deploy your envronment.
-If the `.derp` configuration file is not detected, a wizard will guide your through defining the file prior to deployment. This step will use `derp` CLI to push the `.derp` configuration file to your `derp` environment.
-This initial call to `derp-cli init` will also generate your application's root route (aka "/") with an `index.js` file located within your `derp` application's top folder.
+Calling `derp-cli init <appName>` in your terminal initialize your local `derp` environment. This environment will come with a `derp.json` configuration file and will create your application's routes directory.
 ```
-$ derp-cli init
+# derp-cli init <appName>
+$ derp-cli init myDerpApp
 ```
-Once your environment has been deployed, you can create a new route using the CLI:
+Once your environment has been created, you can make a new route using the CLI, supplying the unique route name, definition of the route, and the type of route (e.g. GET, POST). The route definition provides your API with a URL structure (e.g. http://example.com/admin/users/1 would be `admin/users/:id` and would define a route for getting users by their ID).
 ```
-$ derp-cli new-route getUserById user GET
+# derp-cli new-route <routeName> <routeDefinition> <type>
+$ derp-cli new-route getDerpCount derpcount GET
 ```
-This will create a new folder in your local environment called `getUserById` with a NodeJS stub for your route as well as a `.derp` file for the route.
+This will create a new folder in your local environment called `getDerpCount` with a NodeJS stub for your route as well as a `.derp` file for the route.
 ```
-$ cd getUserById && ls
+# Within routes/getDerpCount directory
 $ index.js package.json
 ```
-That command also created a new route within your remote `derp` application that you can view within the `derp` console. You can perform configuration on the route in the `derp` console or the `derp` CLI.
-Upon modifying the `index.js` file for the `getUserById` route, you can deploy it to your `derp` application using the `derp` CLI:
+At this point you can modify the code within this route to your liking.
+You can deploy it to your remote `derp` application using the `derp` CLI:
 ```
-$ derp-cli deploy-route getUserById
-$ getUserById route has been deployed to your application at http://example.com/getUserById
+# derp-cli deploy-route <routeName>
+$ derp-cli deploy-route getDerpCount
+$ getDerpCount route has been deployed to your application at http://example.com/getDerpCount
 ```
-Alternatively, you can use the `derp` console on the web to make code changes to your route and deploy them.
