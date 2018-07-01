@@ -1,5 +1,4 @@
 # Dynamic Endpoint Routing Platform CLI For NodeJS
-## About DERP
 `derp` is a platform that enables quick and easy management and provisioning of serverless applications.
 
 ### Pre-requisites
