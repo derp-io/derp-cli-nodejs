@@ -4,7 +4,7 @@
     "routes": {
         "hoo5": {
             "type": "GET",
-            "url": "<undeployed-site>/hoo5",
+            "url": "https://773zbegpt6.execute-api.us-east-1.amazonaws.com/api/hoo5",
             "apiPath": "hoo5",
             "path": "./routes/hoo5",
             "lambda": {
@@ -14,8 +14,8 @@
             },
             "gateway": {
                 "resource": {
-                    "id": "wjc2a1",
-                    "parentId": "vy4lhnkye4",
+                    "id": "i2yd8q",
+                    "parentId": "yw89pd3sz0",
                     "pathPart": "hoo5",
                     "path": "/hoo5"
                 },
@@ -32,7 +32,7 @@
         "roleArn": "arn:aws:iam::295795367072:role/derp-test-app1-lambda"
     },
     "gateway": {
-        "id": "ao9dzxp4fb",
-        "rootResourceId": "vy4lhnkye4"
+        "id": "773zbegpt6",
+        "rootResourceId": "yw89pd3sz0"
     }
 }
