@@ -1,15 +1,15 @@
-# derp Milestones and 
+# derp Milestones and Release Information
 
 Current Release: v0.1.0
 
 ## v0.1.0 [Current Release]
-### Milestones:
+### Milestones
 - Provide CLI commands to create a new derp app
 - Provide CLI commands to create a basic derp route (e.g. /getUsers)
 - Provide CLI commands to deploy a basic derp route to AWS
 
 ## v0.2.0 [In Progress]
-### Milestones:
+### Milestones
 - Provide CLI commands to describe derp apps within environment
 - Provide CLI commands to describe derp routes within derp app
 - Provide CLI commands to update a deployed derp route's code
@@ -25,16 +25,16 @@ Current Release: v0.1.0
 - Provide CLI command options to associate custom policies for roles associated with derp routes
 
 ## v0.5.0
-### Milestones:
+### Milestones
 - Provide CLI commands to create a front-end serverless app
 - Provide CLI commands to deploy a front-end serverless app
 - Provide CLI commands to integrate deployed routes with front-end serverless app
 
 ## v0.6.0
-### Milestones:
+### Milestones
 - Provide CLI command options to integrate CloudFront with front-end serverless apps
 - Provide CLI command options to integrate Route53 with front-end serverless apps
 
 ## v1.0.0
-### Milestones:
+### Milestones
 - Publish derp node module to npm
