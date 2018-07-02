@@ -1,4 +1,6 @@
-# derp Milestones and Roadmap
+# derp Milestones and 
+
+Current Release: v0.1.0
 
 ## v0.1.0 [Current Release]
 ### Milestones:
@@ -20,7 +22,19 @@
 ## v0.4.0
 ### Milestones:
 - Provide CLI commands to undeploy a deployed derp route
+- Provide CLI command options to associate custom policies for roles associated with derp routes
+
+## v0.5.0
+### Milestones:
+- Provide CLI commands to create a front-end serverless app
+- Provide CLI commands to deploy a front-end serverless app
+- Provide CLI commands to integrate deployed routes with front-end serverless app
+
+## v0.6.0
+### Milestones:
+- Provide CLI command options to integrate CloudFront with front-end serverless apps
+- Provide CLI command options to integrate Route53 with front-end serverless apps
 
 ## v1.0.0
 ### Milestones:
-- Publish derp node modules to npm
+- Publish derp node module to npm
