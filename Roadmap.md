@@ -2,11 +2,11 @@
 
 Current Release: v0.1.0
 
-## v0.1.0 [Current Release]
+## v0.1.0 [Current Release] :heavy_check_mark:
 ### Milestones
-- Provide CLI commands to create a new derp app
-- Provide CLI commands to create a basic derp route (e.g. /getUsers)
-- Provide CLI commands to deploy a basic derp route to AWS
+- Provide CLI commands to create a new derp app :heavy_check_mark:
+- Provide CLI commands to create a basic derp route (e.g. /getUsers) :heavy_check_mark:
+- Provide CLI commands to deploy a basic derp route to AWS :heavy_check_mark:
 
 ## v0.2.0 [In Progress]
 ### Milestones
