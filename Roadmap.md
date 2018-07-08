@@ -34,7 +34,3 @@ Current Release: v0.1.0
 ### Milestones
 - Provide CLI command options to integrate CloudFront with front-end serverless apps
 - Provide CLI command options to integrate Route53 with front-end serverless apps
-
-## v1.0.0
-### Milestones
-- Publish derp node module to npm
