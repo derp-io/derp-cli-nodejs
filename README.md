@@ -29,5 +29,16 @@ You can deploy it to your remote `derp` application using the `derp` CLI:
 ```
 # derp-cli deploy-route <routeName>
 $ derp-cli deploy-route getDerpCount
-$ getDerpCount route has been deployed to your application at http://example.com/getDerpCount
+$ getDerpCount route has been deployed to your application at http://example.com/derpcount
+```
+To get information about your current derp applications routes, you can use the following commands:
+```
+$ derp-cli routes
+╔══════════════╤════════════╤═══════════════════════╤══════╤══════════╗
+║ NAME         │ API PATH   │ FILE PATH             │ TYPE │ DEPLOYED ║
+╟──────────────┼────────────┼───────────────────────┼──────┼──────────╢
+║ getDerpCount │ derpcount  │ ./routes/getDerpCount │ GET  │ true     ║
+╚══════════════╧════════════╧═══════════════════════╧══════╧══════════╝
+$ derp-cli inspect-route getDerpCount --property url
+http://example.com/derpcount
 ```
