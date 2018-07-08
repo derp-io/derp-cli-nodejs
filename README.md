@@ -31,7 +31,10 @@ You can deploy it to your remote `derp` application using the `derp` CLI:
 $ derp-cli deploy-route getDerpCount
 $ getDerpCount route has been deployed to your application at http://example.com/derpcount
 ```
-To get information about your current derp applications routes, you can use the following commands:
+You can update your remote route at anytime by using the same `derp-cli deploy-route` command.
+
+### Inspection
+To get information about your current derp application's routes, you can use the following commands:
 ```
 $ derp-cli routes
 ╔══════════════╤════════════╤═══════════════════════╤══════╤══════════╗
