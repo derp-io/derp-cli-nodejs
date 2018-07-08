@@ -12,7 +12,7 @@ Current Release: v0.1.0
 ### Milestones
 - Provide CLI commands to describe derp apps within environment
 - Provide CLI commands to describe derp routes within derp app :heavy_check_mark:
-- Provide CLI commands to update a deployed derp route's code
+- Provide CLI commands to update a deployed derp route's code :heavy_check_mark:
 
 ## v0.3.0
 ### Milestones
