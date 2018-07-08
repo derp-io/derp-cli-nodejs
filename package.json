@@ -1,28 +1,29 @@
 {
-  "name": "derp-cli",
-  "version": "0.1.0",
-  "description": "Dynamic Endpoint Routing Platform CLI For NodeJS",
-  "main": "lib/index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/derp-io/derp-cli-nodejs.git"
-  },
-  "author": "Steven Ferrell",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/derp-io/derp-cli-nodejs/issues"
-  },
-  "homepage": "https://github.com/derp-io/derp-cli-nodejs#readme",
-  "preferGlobal": true,
-  "bin": {
-    "derp-cli": "./bin/derp.js"
-  },
-  "dependencies": {
-    "adm-zip": "^0.4.11",
-    "aws-sdk": "^2.266.1",
-    "yargs": "^11.0.0"
-  }
+    "name": "derp-cli",
+    "version": "0.2.0",
+    "description": "Dynamic Endpoint Routing Platform CLI For NodeJS",
+    "main": "lib/index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/derp-io/derp-cli-nodejs.git"
+    },
+    "author": "Steven Ferrell",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/derp-io/derp-cli-nodejs/issues"
+    },
+    "homepage": "https://github.com/derp-io/derp-cli-nodejs#readme",
+    "preferGlobal": true,
+    "bin": {
+        "derp-cli": "./bin/derp-cli"
+    },
+    "dependencies": {
+        "adm-zip": "^0.4.11",
+        "aws-sdk": "^2.266.1",
+        "table": "^4.0.3",
+        "yargs": "^11.0.0"
+    }
 }
