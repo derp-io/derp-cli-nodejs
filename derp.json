@@ -1,0 +1,38 @@
+{
+    "appName": "myapp",
+    "region": "us-east-1",
+    "routes": {
+        "sayHello": {
+            "type": "GET",
+            "apiPath": "sayHello",
+            "path": "./routes/sayHello",
+            "lambda": {
+                "s3Location": "/derp-routes-myapp",
+                "functionArn": "arn:aws:lambda:us-east-1:295795367072:function:derp-myapp-sayHello",
+                "functionName": "derp-myapp-sayHello"
+            },
+            "gateway": {
+                "resource": {
+                    "id": "t8yooy",
+                    "parentId": "wzlvr2eoy8",
+                    "pathPart": "sayHello",
+                    "path": "/sayHello"
+                },
+                "method": {
+                    "httpMethod": "GET",
+                    "authorizationType": "NONE",
+                    "apiKeyRequired": false
+                }
+            },
+            "url": "https://iwsnhon8xl.execute-api.us-east-1.amazonaws.com/api/sayHello"
+        }
+    },
+    "lambda-role": {
+        "roleName": "derp-myapp-lambda",
+        "roleArn": "arn:aws:iam::295795367072:role/derp-myapp-lambda"
+    },
+    "gateway": {
+        "id": "iwsnhon8xl",
+        "rootResourceId": "wzlvr2eoy8"
+    }
+}
