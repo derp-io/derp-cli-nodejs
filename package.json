@@ -1,6 +1,6 @@
 {
     "name": "derp-cli",
-    "version": "0.2.0",
+    "version": "0.2.2",
     "description": "Dynamic Endpoint Routing Platform CLI For NodeJS",
     "main": "lib/index.js",
     "scripts": {
