@@ -9,29 +9,29 @@
 - npm i -g derp-cli
 
 ### Usage
-Calling `derp-cli init <appName>` in your terminal initialize your local `derp` environment. This environment will come with a `derp.json` configuration file and will create your application's routes directory.
+Calling `derp-cli init <appName>` in your terminal will initialize your local `derp` environment. This environment will come with a `derp.json` configuration file and will create your application's routes directory.
 ```
 # derp-cli init <appName>
 $ derp-cli init myDerpApp
 ```
-Once your environment has been created, you can make a new route using the CLI, supplying the unique route name, definition of the route, and the type of route (e.g. GET, POST). The route definition provides your API with a URL structure (e.g. http://example.com/admin/users/1 would be `admin/users/:id` and would define a route for getting users by their ID).
+Once your environment has been created, you can make a new route using the CLI. A route is a serverless application that runs your code and can be triggered by various services, such as an API Gateway. Call the `new-route` command and supply the unique route name, definition of the route, and the type of route (e.g. GET, POST). The route definition provides your API with a URL structure (e.g. http://example.com/admin/users/1 would be `admin/users/:id` and would define a route for getting users by their ID). The unique route name will provide an identifier for this route and will be used to create your route's local code folder.
 ```
 # derp-cli new-route <routeName> <routeDefinition> <type>
 $ derp-cli new-route getDerpCount derpcount GET
 ```
-This will create a new folder in your local environment called `getDerpCount` with a route stub ready for editing and deployment.
+This will create a new folder in your local environment called `routes/getDerpCount` with a route stub ready for editing and deployment.
 ```
 # Within routes/getDerpCount directory
 $ index.js package.json
 ```
-At this point you can modify the code within this route to your liking.
-You can deploy it to your remote `derp` application using the `derp` CLI:
+At this point you can modify the code within this route's index.js to your liking. If you want to add node modules, you can `cd` into the directory and `npm install`.
+You can deploy this route to your remote `derp` application using the `derp` CLI. This will setup various services such as API Gateway, Lambda, IAM Roles/Policies, etc.
 ```
 # derp-cli deploy-route <routeName>
 $ derp-cli deploy-route getDerpCount
 $ getDerpCount route has been deployed to your application at http://example.com/derpcount
 ```
-You can update your remote route at anytime by using the same `derp-cli deploy-route` command.
+You can update your remote route at anytime by using the same `derp-cli deploy-route <routeName>` command.
 
 ### Inspection
 To get information about your current derp application's routes, you can use the following commands:
@@ -45,3 +45,4 @@ $ derp-cli routes
 $ derp-cli inspect-route getDerpCount --property url
 http://example.com/derpcount
 ```
+Using `derp`'s inspection commands will help you manage your application, allowing you to track deployment information, versioning, and more.

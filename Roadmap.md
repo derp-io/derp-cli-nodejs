@@ -20,17 +20,26 @@ Current Release: v0.2.0
 - Provide CLI commands to deploy complex derp route
 
 ## v0.4.0
+### Milestones
+- Provide version-control for route deployments (e.g. `derp-cli deploy-route getUser --versionId 2`)
+- Provide staging-control for route deployments (e.g. `derp-cli deploy-route getUser --stageId qa`)
+- Provide inspection to display route versions
+- Provide inspection to display current route version
+- Provide inspection to display available stages
+- Provide inspection to display current stage deployments
+
+## v0.5.0
 ### Milestones:
 - Provide CLI commands to undeploy a deployed derp route
 - Provide CLI command options to associate custom policies for roles associated with derp routes
 
-## v0.5.0
+## v0.6.0
 ### Milestones
 - Provide CLI commands to create a front-end serverless app
 - Provide CLI commands to deploy a front-end serverless app
 - Provide CLI commands to integrate deployed routes with front-end serverless app
 
-## v0.6.0
+## v0.7.0
 ### Milestones
 - Provide CLI command options to integrate CloudFront with front-end serverless apps
 - Provide CLI command options to integrate Route53 with front-end serverless apps
