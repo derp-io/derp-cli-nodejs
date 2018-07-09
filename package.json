@@ -3,6 +3,12 @@
     "version": "0.2.4",
     "description": "Dynamic Endpoint Routing Platform CLI For NodeJS",
     "main": "lib/index.js",
+    "keywords": [
+        "aws",
+        "lambda",
+        "serverless",
+        "cli"
+    ],
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1"
     },
