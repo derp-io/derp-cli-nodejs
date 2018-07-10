@@ -30,10 +30,10 @@ Current Release: v0.2.0
 
 ## v0.6.0
 ### Milestones
-- Provide inspection to display route versions
-- Provide inspection to display current route version
+- Provide inspection to display deployed route versions
+- Provide inspection to display deployed route version on each stage
 - Provide inspection to display available stages
-- Provide inspection to display current stage deployments
+- Provide inspection to display specific stage information
 
 
 ## v0.7.0
