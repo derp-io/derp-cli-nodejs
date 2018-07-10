@@ -21,12 +21,12 @@ Current Release: v0.2.0
 
 ## v0.4.0
 ### Milestones
+- Provide command to create deployment stages for routes (e.g. `derp-cli new-stage qa`)
 - Provide version control for route deployments (e.g. `derp-cli deploy-route getUser --versionId 2`)
 - Provide staging control for route deployments (e.g. `derp-cli deploy-route getUser --stageId qa`)
 
 ## v0.5.0
 ### Milestones
-- Provide command to create deployment stages for routes (e.g. `derp-cli new-stage prod`)
 - Provide command to copy a deployed route to a different stage (e.g. `derp-cli update-route-stage getUser --stageId prod`)
 - Provide command to change version of a deployed route on a given stage (e.g. `derp-cli update-route-version getUser --versionId 2 --stageId prod`)
 
