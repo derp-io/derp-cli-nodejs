@@ -5,7 +5,7 @@ Current Release: v0.2.0
 ## v0.1.0 :heavy_check_mark:
 ### Milestones
 - Provide CLI commands to create a new derp app :heavy_check_mark:
-- Provide CLI commands to create a basic derp route (e.g. /getUsers) :heavy_check_mark:
+- Provide CLI commands to create a basic derp route (e.g. `/getUsers`) :heavy_check_mark:
 - Provide CLI commands to deploy a basic derp route to AWS :heavy_check_mark:
 
 ## v0.2.0 :heavy_check_mark:
@@ -16,19 +16,17 @@ Current Release: v0.2.0
 
 ## v0.3.0
 ### Milestones
-- Provide CLI commands to create complex derp route (e.g. /admin/users/:id)
+- Provide CLI commands to create complex derp route (e.g. `/admin/users/:id`)
 - Provide CLI commands to deploy complex derp route
 
 ## v0.4.0
 ### Milestones
 - Provide command to create deployment stages for routes (e.g. `derp-cli new-stage qa`)
-- Provide version control for route deployments (e.g. `derp-cli deploy-route getUser --versionId 2`)
-- Provide staging control for route deployments (e.g. `derp-cli deploy-route getUser --stageId qa`)
+- Provide optional version and stage properties for route deployments (e.g. `derp-cli deploy-route getUser --versionId 2 --stageId qa`)
 
 ## v0.5.0
 ### Milestones
-- Provide command to copy a deployed route to a different stage (e.g. `derp-cli update-route-stage getUser --stageId prod`)
-- Provide command to change version of a deployed route on a given stage (e.g. `derp-cli update-route-version getUser --versionId 2 --stageId prod`)
+- Provide command to copy a deployed route to a different stage with optional version property (e.g. `derp-cli copy-route getUser prod --versionId 2`)
 
 ## v0.6.0
 ### Milestones
