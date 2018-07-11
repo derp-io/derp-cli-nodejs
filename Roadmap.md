@@ -14,9 +14,12 @@ Current Release: v0.2.0
 - Provide CLI commands to describe derp routes within derp app :heavy_check_mark:
 - Provide CLI commands to update a deployed derp route's code :heavy_check_mark:
 
+[View Roadmap Notes](Roadmap.md)
+[View Release Notes](Releases.md)
+
 ## v0.3.0
 ### Milestones
-- Provide CLI commands to create complex derp route (e.g. `/admin/users/:id`)
+- Provide CLI commands to create complex derp route, including hierarchical paths and parameter path parts (e.g. `/admin/users` and `/admin/users/:id`)
 - Provide CLI commands to deploy complex derp route
 
 ## v0.4.0
@@ -34,7 +37,6 @@ Current Release: v0.2.0
 - Provide inspection to display deployed route version on each stage
 - Provide inspection to display available stages
 - Provide inspection to display specific stage information
-
 
 ## v0.7.0
 ### Milestones:
