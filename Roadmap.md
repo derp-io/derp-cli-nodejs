@@ -14,8 +14,8 @@ Current Release: v0.2.0
 - Provide CLI commands to describe derp routes within derp app :heavy_check_mark:
 - Provide CLI commands to update a deployed derp route's code :heavy_check_mark:
 
-[View Roadmap Notes](Roadmap.md)
-[View Release Notes](Releases.md)
+[View Roadmap Notes](/Roadmap.md)
+[View Release Notes](/Releases.md)
 
 ## v0.3.0
 ### Milestones
