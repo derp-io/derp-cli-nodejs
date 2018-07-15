@@ -39,16 +39,18 @@ $ getDerpCount route has been deployed to your application at http://example.com
 ```
 You can update your remote route at anytime by using the same `derp-cli deploy-route <routeName>` command.
 
-### Inspection
+### Inspect
 To get information about your current derp application's routes, you can use the following commands:
 ```
-$ derp-cli routes
+$ derp-cli inspect-routes
 ╔══════════════╤════════════╤═══════════════════════╤══════╤══════════╗
 ║ NAME         │ API PATH   │ FILE PATH             │ TYPE │ DEPLOYED ║
 ╟──────────────┼────────────┼───────────────────────┼──────┼──────────╢
 ║ getDerpCount │ derpcount  │ ./routes/getDerpCount │ GET  │ true     ║
 ╚══════════════╧════════════╧═══════════════════════╧══════╧══════════╝
+```
+```
 $ derp-cli inspect-route getDerpCount --property url
 http://example.com/derpcount
 ```
-Using `derp`'s inspection commands will help you manage your application, allowing you to track deployment information, versioning, and more.
+Using `derp`'s inspect commands will help you manage your application, allowing you to track deployment information, versioning, and more.

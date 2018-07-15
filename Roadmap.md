@@ -21,30 +21,30 @@ Current Release: v0.2.0
 
 ## v0.4.0
 ### Milestones
-- Provide command to create deployment stages for routes (e.g. `derp-cli new-stage qa`)
-- Provide optional version and stage properties for route deployments (e.g. `derp-cli deploy-route getUser --versionId 2 --stageId qa`)
+- Provide CLI commands to create a front-end serverless app
+- Provide CLI commands to deploy a front-end serverless app
+- Provide CLI commands to integrate deployed routes with front-end serverless app
 
 ## v0.5.0
 ### Milestones
-- Provide command to copy a deployed route to a different stage with optional version property (e.g. `derp-cli copy-route getUser prod --versionId 2`)
+- Provide command to create deployment stages for routes (e.g. `derp-cli new-stage qa`)
+- Provide optional version and stage properties for route deployments (e.g. `derp-cli deploy-route getUser --versionId 2 --stageId qa`)
 
 ## v0.6.0
+### Milestones
+- Provide command to copy a deployed route to a different stage with optional version property (e.g. `derp-cli copy-route getUser prod --versionId 2`)
+
+## v0.7.0
 ### Milestones
 - Provide inspection to display deployed route versions
 - Provide inspection to display deployed route version on each stage
 - Provide inspection to display available stages
 - Provide inspection to display specific stage information
 
-## v0.7.0
+## v0.8.0
 ### Milestones:
 - Provide CLI commands to undeploy a deployed derp route
 - Provide CLI command options to associate custom policies for roles associated with derp routes
-
-## v0.8.0
-### Milestones
-- Provide CLI commands to create a front-end serverless app
-- Provide CLI commands to deploy a front-end serverless app
-- Provide CLI commands to integrate deployed routes with front-end serverless app
 
 ## v0.9.0
 ### Milestones
