@@ -21,8 +21,8 @@ Current Release: v0.2.0
 
 ## v0.4.0
 ### Milestones
-- Provide CLI commands to create a front-end serverless app
-- Provide CLI commands to deploy a front-end serverless app
+- Provide CLI commands to create a front-end serverless app (e.g. `derp-cli new-website mySite`)
+- Provide CLI commands to deploy a front-end serverless app (e.g. `derp-cli deploy-website mySite`)
 - Provide CLI commands to integrate deployed routes with front-end serverless app
 
 ## v0.5.0

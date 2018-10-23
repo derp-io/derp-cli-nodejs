@@ -10,7 +10,7 @@
         "cli"
     ],
     "scripts": {
-        "test": "echo \"Error: no test specified\" && exit 1"
+        "test": "jasmine-node"
     },
     "repository": {
         "type": "git",
@@ -31,5 +31,8 @@
         "aws-sdk": "^2.266.1",
         "table": "^4.0.3",
         "yargs": "^11.0.0"
+    },
+    "devDependencies": {
+        "jasmine-node": "^1.15.0"
     }
 }
