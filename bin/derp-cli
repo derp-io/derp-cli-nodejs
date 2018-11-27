@@ -16,10 +16,20 @@ yargs
     }, (argv) => {
         derp.inspectRoute(argv.routeName, argv.property);
     })
-    .command(['routes'], "Display routes in current app", (yargs) => {
+    .command(['new-website <websiteName>'], "Create a new website", (yargs) => {
         return yargs;
     }, (argv) => {
-        derp.showRoutesTable();
+        console.log('TODO');
+    })
+    .command(['deploy-website <websiteName>'], "Deploy a website", (yargs) => {
+        return yargs;
+    }, (argv) => {
+        console.log("TODO");
+    })
+    .command(['inspect-routes'], "Display routes in current app", (yargs) => {
+        return yargs;
+    }, (argv) => {
+        derp.inspectRoutes();
     })
     .command(['new-route <routeName> <routeDefinition> <routeType>'], 'Create a new route', (yargs) => {
         return yargs.positional('routeName', {
@@ -37,7 +47,7 @@ yargs
             //     default: 'aws-lambda'
             // })
     }, (argv) => {
-        derp.route(argv.routeName, argv.routeDefinition, argv.routeType);
+        derp.newRoute(argv.routeName, argv.routeDefinition, argv.routeType);
     })
     .command(['deploy-route <routeName>'], 'Deploy a route', (yargs) => {
         return yargs.positional('routeName', {
@@ -48,7 +58,7 @@ yargs
         derp.deployRoute(argv.routeName);
     })
     .command(['init <appName>'],
-        'Initialize derp project.',
+        'Initialize derp project',
         (yargs) => {
             return yargs
                 .option('region', {
