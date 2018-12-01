@@ -57,13 +57,13 @@ yargs
     }, (argv) => {
         derp.deployRoute(argv.routeName);
     })
-    .command(['test-route <routeName>'], 'Test a route locally', (yargs) => {
+    .command(['run <routeName>'], 'Locally run a route', (yargs) => {
         return yargs.positional('routeName', {
             describe: 'Name of route to test',
             type: 'string'
         })
     }, (argv) => {
-        derp.testRoute(argv.routeName);
+        derp.runRoute(argv.routeName);
     })
     .command(['init <appName>'],
         'Initialize derp project',
