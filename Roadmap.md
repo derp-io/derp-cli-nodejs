@@ -50,3 +50,8 @@ Current Release: v0.2.0
 ### Milestones
 - Provide CLI command options to integrate CloudFront with front-end serverless apps
 - Provide CLI command options to integrate Route53 with front-end serverless apps
+
+## v0.10.0
+### Milestones
+- Provide CLI command to locally test routes
+- Provide CLI command to locally host front-end serverless app
