@@ -54,3 +54,19 @@ $ derp-cli inspect-route getDerpCount --property url
 http://example.com/derpcount
 ```
 Using `derp`'s inspect commands will help you manage your application, allowing you to track deployment information, versioning, and more.
+
+### Build derp-cli Locally
+To build derp-cli from source and run locally, run the following commands:
+```
+# clone the repo
+$ git clone https://github.com/derp-io/derp-cli-nodejs.git
+
+# cd into the cloned directory
+$ cd derp-cli-nodejs
+
+# install npm modules
+$ npm install
+
+# run derp-cli using node
+$ node .\bin\derp-cli --version
+```
