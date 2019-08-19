@@ -55,7 +55,7 @@ http://example.com/derpcount
 ```
 Using `derp`'s inspect commands will help you manage your application, allowing you to track deployment information, versioning, and more.
 
-### Build derp-cli Locally
+### Build derp-cli-nodejs Locally
 To build derp-cli from source and run locally, run the following commands:
 ```
 # clone the repo
