@@ -59,3 +59,4 @@ Current Release: v0.2.0
 ## v0.11.0
 ### Milestones
 - Provide CLI command to distribute routes globally
+- Provide CLI command to distribute manage regional deployment of routes
