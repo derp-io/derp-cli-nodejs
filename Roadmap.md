@@ -55,3 +55,7 @@ Current Release: v0.2.0
 ### Milestones
 - Provide CLI command to locally test routes
 - Provide CLI command to locally host front-end serverless app
+
+## v0.11.0
+### Milestones
+- Provide CLI command to distribute routes globally
