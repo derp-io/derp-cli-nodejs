@@ -45,6 +45,12 @@ $ derp-cli run getDerpCount
 Hello new Route!
 ```
 
+### Undeploy
+To remove a deployed route, simply call the undeploy-route command. This will remove the specified route and any unused resources.
+```
+$ derp-cli undeploy-route getDerpCount
+```
+
 ### Inspect
 To get information about your current derp application's routes, you can use the following commands:
 ```
