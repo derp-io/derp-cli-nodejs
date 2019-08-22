@@ -33,29 +33,37 @@ yargs
     })
     .command(['new-route <routeName> <routeDefinition> <routeType>'], 'Create a new route', (yargs) => {
         return yargs.positional('routeName', {
-            describe: 'Name used for your route',
-            type: 'string'
-        }).positional('routeDefinition', {
-            describe: 'Definition of route as it should be exposed in a url, e.g. `api/getUserById/:id`',
-            type: 'string'
-        }).positional('routeType', {
-            describe: 'Type of HTTP Method for this route: GET|POST|PUT|DELETE',
-            type: 'string'
-        })
-        // .option('provider', {
-        //     alias: 'p',
-        //     default: 'aws-lambda'
-        // })
+                describe: 'Name used for your route',
+                type: 'string'
+            }).positional('routeDefinition', {
+                describe: 'Definition of route as it should be exposed in a url, e.g. `api/getUserById/:id`',
+                type: 'string'
+            }).positional('routeType', {
+                describe: 'Type of HTTP Method for this route: GET|POST|PUT|DELETE',
+                type: 'string'
+            })
+            // .option('provider', {
+            //     alias: 'p',
+            //     default: 'aws-lambda'
+            // })
     }, (argv) => {
         derp.newRoute(argv.routeName, argv.routeDefinition, argv.routeType);
     })
     .command(['deploy-route <routeName>'], 'Deploy a route', (yargs) => {
         return yargs.positional('routeName', {
-            describe: 'Name used for your routed route',
+            describe: 'Name used for your route to deploy',
             type: 'string'
         })
     }, (argv) => {
         derp.deployRoute(argv.routeName);
+    })
+    .command(['undeploy-route <routeName>'], 'Deploy a route', (yargs) => {
+        return yargs.positional('routeName', {
+            describe: 'Name used for your route to undeploy',
+            type: 'string'
+        })
+    }, (argv) => {
+        derp.undeployRoute(argv.routeName);
     })
     .command(['run <routeName>'], 'Locally run a route', (yargs) => {
         return yargs.positional('routeName', {

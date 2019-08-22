@@ -30,3 +30,6 @@
 
 ### v0.2.7 (Aug 21, 2019)
 - Added command `derp-cli run <routeName>`
+
+### v0.3.0 (Aug 21, 2019)
+- Added command `derp-cli undeploy <routeName>`

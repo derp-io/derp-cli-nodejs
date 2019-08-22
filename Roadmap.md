@@ -17,6 +17,7 @@ Current Release: v0.2.0
 
 ## v0.3.0
 ### Milestones
+- Provide CLI commands to undeploy a deployed derp route :heavy_check_mark:
 - Provide CLI commands to create complex derp route, including hierarchical paths and parameter path parts (e.g. `/admin/users` and `/admin/users/:id`)
 - Provide CLI commands to deploy complex derp route
 
@@ -44,7 +45,6 @@ Current Release: v0.2.0
 
 ## v0.8.0
 ### Milestones:
-- Provide CLI commands to undeploy a deployed derp route
 - Provide CLI command options to associate custom policies for roles associated with derp routes
 
 ## v0.9.0
