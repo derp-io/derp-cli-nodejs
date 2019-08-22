@@ -39,6 +39,12 @@ $ getDerpCount route has been deployed to your application at http://example.com
 ```
 You can update your remote route at anytime by using the same `derp-cli deploy-route <routeName>` command.
 
+You can run a route locally using the `derp-cli run-route <routeName>` command.
+```
+$ derp-cli run getDerpCount
+Hello new Route!
+```
+
 ### Inspect
 To get information about your current derp application's routes, you can use the following commands:
 ```

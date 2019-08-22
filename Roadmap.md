@@ -13,6 +13,7 @@ Current Release: v0.2.0
 - Provide CLI commands to describe derp apps within environment (backlogged)
 - Provide CLI commands to describe derp routes within derp app :heavy_check_mark:
 - Provide CLI commands to update a deployed derp route's code :heavy_check_mark:
+- Provide CLI command to locally test routes :heavy_check_mark:
 
 ## v0.3.0
 ### Milestones
@@ -53,5 +54,9 @@ Current Release: v0.2.0
 
 ## v0.10.0
 ### Milestones
-- Provide CLI command to locally test routes
 - Provide CLI command to locally host front-end serverless app
+
+## v0.11.0
+### Milestones
+- Provide CLI command to distribute routes globally
+- Provide CLI command to distribute manage regional deployment of routes

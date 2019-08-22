@@ -24,3 +24,9 @@
 ### v0.2.5 (July 15th, 2018)
 - Minor code refactoring
 - Changed command `derp-cli routes` to `derp-cli inspect-routes`
+
+### v0.2.6 (Aug 20, 2019)
+- Minor code refactoring
+
+### v0.2.7 (Aug 21, 2019)
+- Added command `derp-cli run <routeName>`
